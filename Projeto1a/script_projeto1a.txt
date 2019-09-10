@@ -1,0 +1,24 @@
+* os passos feitos para criar meu MYSQL *
+
+~ criando a base de dados ~
+SHOW DATABASES;
+CREATE DATABASES projeto1;
+USE projeto1;
+
+~ criando a tabela login ~
+CREATE TABLE login	(
+	id INT NOT NULL AUTO_INCREMENT,
+	login VARCHAR(32) NOT NULL,
+	password VARCHAR(32) NOT NULL,
+	PRIMARY KEY (ID)
+);
+
+~ criando a tabela de notas ~
+CREATE TABLE notas 	(
+	id INT NOT NULL AUTO_INCREMENT,
+	pessoa VARCHAR(32) NOT NULL,
+	titulo_nota VARCHAR(32) NOT NULL,
+	notas VARCHAR(1000) NOT NULL,
+	PRIMARY KEY (ID)
+);
+
